@@ -38,3 +38,6 @@ in_game/common/production_methods/__readme.txt,production_methods,annotated,1.1.
 in_game/common/disasters/[36 files — see disasters/ folder],disasters,annotated,1.1.10
 in_game/common/estates/00_default.txt,estates,annotated,1.1.10
 in_game/common/estate_privileges/[8 files — see estate_privileges/ folder],estates,annotated,1.1.10
+in_game/common/scripted_effects/[14 files — see scripted_effects/ folder],scripted_effects,annotated,1.1.10
+in_game/common/scripted_triggers/[22 files — see scripted_triggers/ folder],scripted_triggers,annotated,1.1.10
+in_game/common/scripted_modifiers/scripted_modifiers.info,scripted_modifiers,annotated,1.1.10

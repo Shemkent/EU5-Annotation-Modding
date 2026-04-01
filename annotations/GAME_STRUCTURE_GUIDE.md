@@ -152,12 +152,12 @@ Alert descriptions, attribute columns, artist types & work, insults, death reaso
 ### Modifiers & Effects (Scripted Infrastructure)
 | Folder | Likely System | Stage |
 |---|---|---|
-| `in_game/common/modifiers/` | modifiers | stub |
-| `in_game/common/static_modifiers/` | static_modifiers | stub |
-| `in_game/common/auto_modifiers/` | auto_modifiers | stub |
-| `in_game/common/scripted_modifiers/` | scripted_modifiers | unmapped |
-| `in_game/common/scripted_effects/` | scripted_effects | stub |
-| `in_game/common/scripted_triggers/` | scripted_triggers | stub |
+| `in_game/common/modifiers/` | modifiers | annotated (conceptual guide, no single folder) |
+| `in_game/common/static_modifiers/` | static_modifiers | n/a — folder absent in v1.1.10 |
+| `in_game/common/auto_modifiers/` | auto_modifiers | annotated |
+| `in_game/common/scripted_modifiers/` | scripted_modifiers | annotated |
+| `in_game/common/scripted_effects/` | scripted_effects | annotated |
+| `in_game/common/scripted_triggers/` | scripted_triggers | annotated |
 | `in_game/common/scripted_rules/` | scripted_rules | unmapped |
 | `in_game/common/script_values/` | script_values | unmapped |
 | `in_game/common/scripted_lists/` | scripted_lists | unmapped |
