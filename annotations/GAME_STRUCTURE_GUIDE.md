@@ -95,8 +95,8 @@ Alert descriptions, attribute columns, artist types & work, insults, death reaso
 | `in_game/common/goods_demand/` | goods | unmapped |
 | `in_game/common/goods_demand_category/` | goods | unmapped |
 | `in_game/common/production_methods/` | production_methods | stub |
-| `in_game/common/building_types/` | buildings | stub |
-| `in_game/common/building_categories/` | buildings | unmapped |
+| `in_game/common/building_types/` | buildings | annotated |
+| `in_game/common/building_categories/` | buildings | annotated |
 | `in_game/common/pop_types/` | pop_types | unmapped |
 | `in_game/common/employment_systems/` | employment_systems | unmapped |
 | `in_game/common/policies/` | policies | stub |

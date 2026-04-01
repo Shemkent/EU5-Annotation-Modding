@@ -27,3 +27,5 @@ in_game/common/auto_modifiers/location.txt,auto_modifiers,annotated,1.1.10
 in_game/common/auto_modifiers/readme.txt,auto_modifiers,annotated,1.1.10
 in_game/common/avatars/hindu.txt,avatars,annotated,1.1.10
 in_game/common/avatars/readme.txt,avatars,annotated,1.1.10
+in_game/common/building_types/[40+ files — see building_types/ folder],buildings,annotated,1.1.10
+in_game/common/building_categories/00_default.txt,buildings,annotated,1.1.10
