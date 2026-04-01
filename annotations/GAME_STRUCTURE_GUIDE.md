@@ -104,8 +104,8 @@ Alert descriptions, attribute columns, artist types & work, insults, death reaso
 ### Estates & Characters
 | Folder | Likely System | Stage |
 |---|---|---|
-| `in_game/common/estates/` | estates | unmapped |
-| `in_game/common/estate_privileges/` | estates | unmapped |
+| `in_game/common/estates/` | estates | annotated |
+| `in_game/common/estate_privileges/` | estates | annotated |
 | `in_game/common/character_interactions/` | character_interactions | stub |
 | `in_game/common/child_educations/` | character_interactions | unmapped |
 | `in_game/common/heir_selections/` | character_interactions | unmapped |
