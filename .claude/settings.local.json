@@ -4,7 +4,9 @@
       "WebSearch",
       "Bash(Get-ChildItem \"C:\\\\Program Files \\(x86\\)\\\\Steam\\\\steamapps\\\\common\\\\Europa Universalis V\\\\game\\\\in_game\\\\common\\\\ai_diplochance\" \")",
       "Bash(Select-Object Name, Length)",
-      "Bash(gh pr:*)"
+      "Bash(gh pr:*)",
+      "Bash(cp \".claude/Annotator.md\" \".claude/agents/annotator.md\")",
+      "Bash(cp \".claude/Modder.md\" \".claude/agents/modder.md\")"
     ]
   }
 }

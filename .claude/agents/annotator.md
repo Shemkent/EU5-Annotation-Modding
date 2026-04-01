@@ -1,4 +1,5 @@
 # Annotator Guide
+**Model:** sonnet
 
 ## Artifacts
 | File | Purpose |
@@ -22,6 +23,7 @@ Both phases run together when scope is small enough to read all files in one pas
 3. Set rows to `stage=annotated` in `_file_index.csv`
 4. Set stage header in `[system].md` to `complete`
 5. Commit on `vanilla-annotation`: `annotate: [system name]`
+6. Recommend the next scope to work on: check `GAME_STRUCTURE_GUIDE.md` for unmapped/stub systems in the same domain cluster, estimate file count, and suggest 1–2 candidates that fit in a single session without exceeding token budget (prefer systems with few files or closely related folders that share context with what was just annotated)
 
 ## Annotation Format
 
@@ -67,5 +69,4 @@ Tag each annotation with one of:
 - **Scripted Logic** — shared triggers/effects referenced across systems
 - **Data/Reference** — static lookup tables, hardcoded lists
 
-> **TODO:** Restructure `GAME_STRUCTURE_GUIDE.md` by system type once coverage is sufficient.
-> Currently flat-alphabetical; grouping by type will make it more useful to modders.
+See `CLAUDE.md` for completeness criteria (`complete` stage).

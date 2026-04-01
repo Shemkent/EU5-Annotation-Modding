@@ -1,239 +1,252 @@
 # EU5 Game File Structure Guide
 
-This guide maps the game's `/in_game/common/` directory for modding reference.
-
-**Index of Major Systems:**
-- [Advances](#advances)
-- [Age](#age)
-- [AI Diplomatic Chance](#ai-diplomatic-chance)
-- [Alert Descriptions](#alert-descriptions) *(UI/Presentation)*
-- [Artist Types](#artist-types) *(Data/Reference)*
-- [Artist Work](#artist-work)
-- [Attribute Columns](#attribute-columns) *(UI/Presentation)*
-- [Auto Modifiers](#auto-modifiers)
-- [Avatars](#avatars)
-- [Armies & Military](#armies--military)
-- [Buildings](#buildings)
-- [Characters & Traits](#characters--traits)
-- [Disasters & Events](#disasters--events)
-- [Government & Politics](#government--politics)
-- [Modifiers & Effects](#modifiers--effects)
-- [Missions & Content](#missions--content)
-- [Religion & Culture](#religion--culture)
-- [Trade & Economy](#trade--economy)
-- [War & Diplomacy](#war--diplomacy)
+Covers `in_game/common/` (115 folders) and `main_menu/common/` (14 entries).
+Annotation status is kept in `_file_index.csv`. This guide is the roadmap — it shows what exists, how folders cluster, and what to prioritize.
 
 ---
 
-## Index
+## Priority Tiers
 
-| System | Folder | Stage |
+**Tier 1 — Core gameplay** *(annotate first)*
+Buildings, laws, government types & reforms, advances, religions, traits, technologies, production methods, disasters, estates & privileges, scripted effects & triggers, modifiers
+
+**Tier 2 — Diplomacy & war**
+Casus belli, wargoals, peace treaties, subject types, international organizations, country interactions, generic actions
+
+**Tier 3 — Economy & population**
+Goods, prices, goods demand, pop types, levies, employment systems, production methods, policies
+
+**Tier 4 — Characters & culture**
+Character interactions, child educations, cultures, culture groups, societal values, traits, trait flavor, ethnicities, genes
+
+**Tier 5 — Religion**
+Religions, religion groups, religious aspects/factions/figures/focuses/schools, gods, holy sites, avatars
+
+**Tier 6 — Scripted infrastructure**
+Script values, scripted lists, scripted modifiers, scripted rules, scripted geography, scripted relations, scripted country names, scripted diplomatic objectives, on_action, scripted_guis, scripted_hints, trigger/effect localization
+
+**Tier 7 — AI**
+AI diplomatic chance, biases, rival criteria, generic action AI lists, join war rules
+
+**Tier 8 — UI / Presentation / Niche**
+Alert descriptions, attribute columns, artist types & work, insults, death reason, designated heir reason, customizable localization, music player tracks, tutorial lessons, road types, topography, vegetation, climates, town setups, location ranks, country ranks, historical scores, persistent DNA
+
+---
+
+## Domain Clusters
+
+### Government & Politics
+| Folder | Likely System | Stage |
 |---|---|---|
-| [Advances](advances.md) | `in_game/common/advances/` | stub |
-| [Auto Modifiers](auto_modifiers.md) | `in_game/common/auto_modifiers/` | stub |
-| [Buildings](buildings.md) | `in_game/common/building_types/` | stub |
-| [Casus Belli](casus_belli.md) | `in_game/common/casus_belli/` | stub |
-| [Character Interactions](character_interactions.md) | `in_game/common/character_interactions/` | stub |
-| [Disasters](disasters.md) | `in_game/common/disasters/` | stub |
-| [Government Reforms](government_reforms.md) | `in_game/common/government_reforms/` | stub |
-| [Government Types](government_types.md) | `in_game/common/government_types/` | stub |
-| [Laws](laws.md) | `in_game/common/laws/` | stub |
-| [Missions](missions.md) | `in_game/common/missions/` | stub |
-| [Modifiers](modifiers.md) | `in_game/common/modifiers/` | stub |
-| [Policies](policies.md) | `in_game/common/policies/` | stub |
-| [Production Methods](production_methods.md) | `in_game/common/production_methods/` | stub |
-| [Religions](religions.md) | `in_game/common/religions/` | stub |
-| [Scripted Effects](scripted_effects.md) | `in_game/common/scripted_effects/` | stub |
-| [Scripted Triggers](scripted_triggers.md) | `in_game/common/scripted_triggers/` | stub |
-| [Static Modifiers](static_modifiers.md) | `in_game/common/static_modifiers/` | stub |
-| [Subject Types](subject_types.md) | `in_game/common/subject_types/` | stub |
-| [Technologies](technologies.md) | `in_game/common/technologies/` | stub |
-| [Traits](traits.md) | `in_game/common/traits/` | stub |
-| [Unit Types](unit_types.md) | `in_game/common/unit_types/` | stub |
-| [War Goals](wargoals.md) | `in_game/common/wargoals/` | stub |
+| `in_game/common/government_types/` | government_types | stub |
+| `in_game/common/government_reforms/` | government_reforms | stub |
+| `in_game/common/laws/` | laws | stub |
+| `in_game/common/policies/` | policies | stub |
+| `in_game/common/cabinet_actions/` | government_types | unmapped |
+| `in_game/common/parliament_types/` | government_types | unmapped |
+| `in_game/common/parliament_agendas/` | government_types | unmapped |
+| `in_game/common/parliament_issues/` | government_types | unmapped |
+| `in_game/common/regencies/` | government_types | unmapped |
+| `in_game/common/resolutions/` | government_types | unmapped |
+| `in_game/common/hegemons/` | government_types | unmapped |
+| `in_game/common/formable_countries/` | government_types | unmapped |
+| `in_game/common/country_ranks/` | government_types | unmapped |
+| `main_menu/common/game_rules/` | game_rules | unmapped |
+| `main_menu/common/scenarios/` | scenarios | unmapped |
+
+### Military & War
+| Folder | Likely System | Stage |
+|---|---|---|
+| `in_game/common/unit_types/` | unit_types | stub |
+| `in_game/common/unit_categories/` | unit_types | unmapped |
+| `in_game/common/unit_abilities/` | unit_types | unmapped |
+| `in_game/common/unit_formation_preference/` | unit_types | unmapped |
+| `in_game/common/levies/` | levies | unmapped |
+| `in_game/common/recruitment_method/` | levies | unmapped |
+| `in_game/common/wargoals/` | wargoals | stub |
+| `in_game/common/casus_belli/` | casus_belli | stub |
+| `in_game/common/peace_treaties/` | wargoals | unmapped |
+| `in_game/common/join_war_rules/` | wargoals | unmapped |
+| `in_game/common/subject_military_stances/` | subject_types | unmapped |
+
+### Diplomacy & International
+| Folder | Likely System | Stage |
+|---|---|---|
+| `in_game/common/subject_types/` | subject_types | stub |
+| `in_game/common/international_organizations/` | international_organizations | unmapped |
+| `in_game/common/international_organization_payments/` | international_organizations | unmapped |
+| `in_game/common/international_organization_land_ownership_rules/` | international_organizations | unmapped |
+| `in_game/common/international_organization_special_statuses/` | international_organizations | unmapped |
+| `in_game/common/country_interactions/` | country_interactions | unmapped |
+| `in_game/common/generic_actions/` | generic_actions | unmapped |
+| `in_game/common/generic_action_ai_lists/` | ai_generic_actions | unmapped |
+| `in_game/common/diplomatic_costs/` | country_interactions | unmapped |
+| `in_game/common/scripted_diplomatic_objectives/` | scripted_diplomatic_objectives | unmapped |
+| `in_game/common/scripted_relations/` | scripted_relations | unmapped |
+| `in_game/common/rival_criteria/` | ai_rivals | unmapped |
+| `in_game/common/insults/` | country_interactions | unmapped |
+| `in_game/common/situations/` | situations | unmapped |
+
+### Economy & Trade
+| Folder | Likely System | Stage |
+|---|---|---|
+| `in_game/common/goods/` | goods | unmapped |
+| `in_game/common/prices/` | goods | unmapped |
+| `in_game/common/goods_demand/` | goods | unmapped |
+| `in_game/common/goods_demand_category/` | goods | unmapped |
+| `in_game/common/production_methods/` | production_methods | stub |
+| `in_game/common/building_types/` | buildings | stub |
+| `in_game/common/building_categories/` | buildings | unmapped |
+| `in_game/common/pop_types/` | pop_types | unmapped |
+| `in_game/common/employment_systems/` | employment_systems | unmapped |
+| `in_game/common/policies/` | policies | stub |
+
+### Estates & Characters
+| Folder | Likely System | Stage |
+|---|---|---|
+| `in_game/common/estates/` | estates | unmapped |
+| `in_game/common/estate_privileges/` | estates | unmapped |
+| `in_game/common/character_interactions/` | character_interactions | stub |
+| `in_game/common/child_educations/` | character_interactions | unmapped |
+| `in_game/common/heir_selections/` | character_interactions | unmapped |
+| `in_game/common/traits/` | traits | stub |
+| `in_game/common/trait_flavor/` | traits | unmapped |
+| `in_game/common/genes/` | genes | unmapped |
+| `in_game/common/persistent_dna/` | genes | unmapped |
+| `in_game/common/ethnicities/` | ethnicities | unmapped |
+
+### Technology & Progression
+| Folder | Likely System | Stage |
+|---|---|---|
+| `in_game/common/advances/` | advances | stub |
+| `in_game/common/technologies/` | technologies | stub |
+| `in_game/common/age/` | age | complete |
+| `in_game/common/institution/` | institutions | unmapped |
+| `in_game/common/disasters/` | disasters | stub |
+| `in_game/common/missions/` | missions | stub |
+| `in_game/common/mission_task_defs/` | missions | unmapped |
+| `main_menu/common/achievements/` | achievements | unmapped |
+| `main_menu/common/achievement_groups.txt` | achievements | unmapped |
+| `main_menu/common/scenarios/` | scenarios | unmapped |
+
+### Religion & Culture
+| Folder | Likely System | Stage |
+|---|---|---|
+| `in_game/common/religions/` | religions | stub |
+| `in_game/common/religion_groups/` | religions | unmapped |
+| `in_game/common/religious_aspects/` | religions | unmapped |
+| `in_game/common/religious_factions/` | religions | unmapped |
+| `in_game/common/religious_figures/` | religions | unmapped |
+| `in_game/common/religious_focuses/` | religions | unmapped |
+| `in_game/common/religious_schools/` | religions | unmapped |
+| `in_game/common/gods/` | religions | unmapped |
+| `in_game/common/holy_site_types/` | religions | unmapped |
+| `in_game/common/holy_sites/` | religions | unmapped |
+| `in_game/common/avatars/` | avatars | complete |
+| `in_game/common/culture_groups/` | cultures | unmapped |
+| `in_game/common/cultures/` | cultures | unmapped |
+| `in_game/common/societal_values/` | cultures | unmapped |
+| `in_game/common/language_families/` | cultures | unmapped |
+| `in_game/common/languages/` | cultures | unmapped |
+
+### Modifiers & Effects (Scripted Infrastructure)
+| Folder | Likely System | Stage |
+|---|---|---|
+| `in_game/common/modifiers/` | modifiers | stub |
+| `in_game/common/static_modifiers/` | static_modifiers | stub |
+| `in_game/common/auto_modifiers/` | auto_modifiers | stub |
+| `in_game/common/scripted_modifiers/` | scripted_modifiers | unmapped |
+| `in_game/common/scripted_effects/` | scripted_effects | stub |
+| `in_game/common/scripted_triggers/` | scripted_triggers | stub |
+| `in_game/common/scripted_rules/` | scripted_rules | unmapped |
+| `in_game/common/script_values/` | script_values | unmapped |
+| `in_game/common/scripted_lists/` | scripted_lists | unmapped |
+| `in_game/common/on_action/` | on_action | unmapped |
+| `in_game/common/scriptable_hints/` | scriptable_hints | unmapped |
+| `in_game/common/scripted_guis/` | scripted_guis | unmapped |
+| `in_game/common/scripted_country_names/` | scripted_country_names | unmapped |
+| `in_game/common/scripted_geography/` | scripted_geography | unmapped |
+| `in_game/common/effect_localization/` | effect_localization | unmapped |
+| `in_game/common/trigger_localization/` | trigger_localization | unmapped |
+| `in_game/common/customizable_localization/` | customizable_localization | unmapped |
+| `main_menu/common/static_modifiers/` | static_modifiers | unmapped |
+| `main_menu/common/scripted_triggers/` | scripted_triggers | unmapped |
+| `main_menu/common/scripted_lists/` | scripted_lists | unmapped |
+| `main_menu/common/script_values/` | script_values | unmapped |
+| `main_menu/common/modifier_type_definitions/` | modifiers | unmapped |
+| `main_menu/common/modifier_icons/` | modifiers | unmapped |
+
+### AI
+| Folder | Likely System | Stage |
+|---|---|---|
+| `in_game/common/ai_diplochance/` | ai_diplochance | complete |
+| `in_game/common/biases/` | ai_biases | unmapped |
+| `in_game/common/rival_criteria/` | ai_rivals | unmapped |
+| `in_game/common/generic_action_ai_lists/` | ai_generic_actions | unmapped |
+| `in_game/common/join_war_rules/` | ai_war | unmapped |
+
+### Geography & Map
+| Folder | Likely System | Stage |
+|---|---|---|
+| `in_game/common/climates/` | map_geography | unmapped |
+| `in_game/common/topography/` | map_geography | unmapped |
+| `in_game/common/vegetation/` | map_geography | unmapped |
+| `in_game/common/road_types/` | map_geography | unmapped |
+| `in_game/common/location_ranks/` | map_geography | unmapped |
+| `in_game/common/town_setups/` | map_geography | unmapped |
+| `in_game/common/scripted_geography/` | scripted_geography | unmapped |
+
+### UI / Presentation / Data
+| Folder | Likely System | Stage |
+|---|---|---|
+| `in_game/common/alert_descriptions/` | alert_descriptions | complete |
+| `in_game/common/attribute_columns/` | attribute_columns | complete |
+| `in_game/common/artist_types/` | artist_types | complete |
+| `in_game/common/artist_work/` | artist_work | complete |
+| `in_game/common/music_player_tracks/` | music_player_tracks | unmapped |
+| `in_game/common/tutorial_lesson_chains/` | tutorial | unmapped |
+| `in_game/common/tutorial_lessons/` | tutorial | unmapped |
+| `in_game/common/historical_scores/` | historical_scores | unmapped |
+| `in_game/common/country_description_categories/` | ui_data | unmapped |
+| `in_game/common/death_reason/` | ui_data | unmapped |
+| `in_game/common/designated_heir_reason/` | ui_data | unmapped |
+| `main_menu/common/game_concepts/` | game_concepts | unmapped |
+| `main_menu/common/named_colors/` | ui_data | unmapped |
+| `main_menu/common/coat_of_arms/` | ui_data | unmapped |
+| `main_menu/common/flag_definitions/` | ui_data | unmapped |
 
 ---
 
-## System Entries
+## Annotation Index (completed systems)
 
-## Advances
-**Annotation:** [advances.md](advances.md)
-**Folder:** `in_game/common/advances/`
-**Keywords:**
-**Stage:** stub
-
-## Auto Modifiers
-**Annotation:** [auto_modifiers.md](auto_modifiers.md)
-**Folder:** `in_game/common/auto_modifiers/`
-**Keywords:**
-**Stage:** stub
-
-## Buildings
-**Annotation:** [buildings.md](buildings.md)
-**Folder:** `in_game/common/building_types/`
-**Keywords:**
-**Stage:** stub
-
-## Casus Belli
-**Annotation:** [casus_belli.md](casus_belli.md)
-**Folder:** `in_game/common/casus_belli/`
-**Keywords:**
-**Stage:** stub
-
-## Character Interactions
-**Annotation:** [character_interactions.md](character_interactions.md)
-**Folder:** `in_game/common/character_interactions/`
-**Keywords:**
-**Stage:** stub
-
-## Disasters
-**Annotation:** [disasters.md](disasters.md)
-**Folder:** `in_game/common/disasters/`
-**Keywords:**
-**Stage:** stub
-
-## Government Reforms
-**Annotation:** [government_reforms.md](government_reforms.md)
-**Folder:** `in_game/common/government_reforms/`
-**Keywords:**
-**Stage:** stub
-
-## Government Types
-**Annotation:** [government_types.md](government_types.md)
-**Folder:** `in_game/common/government_types/`
-**Keywords:**
-**Stage:** stub
-
-## Laws
-**Annotation:** [laws.md](laws.md)
-**Folder:** `in_game/common/laws/`
-**Keywords:**
-**Stage:** stub
-
-## Missions
-**Annotation:** [missions.md](missions.md)
-**Folder:** `in_game/common/missions/`
-**Keywords:**
-**Stage:** stub
-
-## Modifiers
-**Annotation:** [modifiers.md](modifiers.md)
-**Folder:** `in_game/common/modifiers/`
-**Keywords:**
-**Stage:** stub
-
-## Policies
-**Annotation:** [policies.md](policies.md)
-**Folder:** `in_game/common/policies/`
-**Keywords:**
-**Stage:** stub
-
-## Production Methods
-**Annotation:** [production_methods.md](production_methods.md)
-**Folder:** `in_game/common/production_methods/`
-**Keywords:**
-**Stage:** stub
-
-## Religions
-**Annotation:** [religions.md](religions.md)
-**Folder:** `in_game/common/religions/`
-**Keywords:**
-**Stage:** stub
-
-## Scripted Effects
-**Annotation:** [scripted_effects.md](scripted_effects.md)
-**Folder:** `in_game/common/scripted_effects/`
-**Keywords:**
-**Stage:** stub
-
-## Scripted Triggers
-**Annotation:** [scripted_triggers.md](scripted_triggers.md)
-**Folder:** `in_game/common/scripted_triggers/`
-**Keywords:**
-**Stage:** stub
-
-## Static Modifiers
-**Annotation:** [static_modifiers.md](static_modifiers.md)
-**Folder:** `in_game/common/static_modifiers/`
-**Keywords:**
-**Stage:** stub
-
-## Subject Types
-**Annotation:** [subject_types.md](subject_types.md)
-**Folder:** `in_game/common/subject_types/`
-**Keywords:**
-**Stage:** stub
-
-## Technologies
-**Annotation:** [technologies.md](technologies.md)
-**Folder:** `in_game/common/technologies/`
-**Keywords:**
-**Stage:** stub
-
-## Traits
-**Annotation:** [traits.md](traits.md)
-**Folder:** `in_game/common/traits/`
-**Keywords:**
-**Stage:** stub
-
-See: [`advances/`](advances.md) — 100+ files; named by scope (country tag, culture, government type, country type, religion, estate, geography)
-Keywords: `advance_id`, `age`, `potential`, `allow`, `requires`, `government`, `country_type`, `for`, `unlock_unit`, `unlock_building`, `unlock_law`, `unlock_levy`, `unlock_government_reform`, `unlock_production_method`, `modifier_while_progressing`
-
----
-
-## Age
-
-See: [`age/`](../age.md)
-Keywords: `age_[id]`, `year`, `price_stability`, `max_price`, `hegemons_allowed`, `efficiency`, `unique`, `modifier`, `mercenaries`, `victory_card`, `war_score_from_battles`, `months_for_exploration_spread`, `max_ai_privilege_per_estate`, `min_ai_privilege_per_estate`
-
----
-
-## AI Diplomatic Chance
-
-See: [`ai_diplochance/`](ai_diplochance.md)
-Keywords: `action_key`, `base`, `opinion`, `trust_in_actor`, `rank_difference`, `different_religion`, `different_culture`, `war_exhaustion`, `in_debt`, `yesman`, `enforced_demand`, `relative_strength`, `border_distance`
-
----
-
-## Alert Descriptions
-**Type: UI / Presentation** — display config only; trigger logic is elsewhere.
-See: [`alert_descriptions/`](alert_descriptions.md)
-Keywords: `alert_key`, `title`, `texture`, `priority`, `game_concept`
-
----
-
-## Artist Types
-**Type: Data/Reference** — named specializations filtering what art a country can produce.
-See: [`artist_types/`](artist_types.md)
-Keywords: `artist_type_id`, `potential`
-
----
-
-## Artist Work
-See: [`artist_work/`](artist_work.md)
-Keywords: `work_type_id`, `captured`, `allow`, `location_modifier`, `country_modifier`, `religion_scale_modifier`
-
----
-
-## Attribute Columns
-**Type: UI/Presentation** — column layout and sort config for selection lists; tightly coupled to GUI widgets.
-See: [`attribute_columns/`](attribute_columns.md)
-Keywords: `object_type`, `column_id`, `widget`, `width`, `fixed_height`, `is_constant_width`, `sort`
-
----
-
-## Auto Modifiers
-See: [`auto_modifiers/`](auto_modifiers.md)
-Keywords: `modifier_id`, `potential_trigger`, `limit`, `scales_with`, `requires_real`, `hide_effects`, `alert`, `category`, `type`
-
----
-
-## Avatars
-See: [`avatars/`](avatars.md)
-Keywords: `avatar_id`, `god`, `potential`, `allow`, `country_modifier`, `location_modifier`, `on_activate`, `on_fully_activated`, `on_deactivate`
-
-## War Goals
-**Annotation:** [wargoals.md](wargoals.md)
-**Folder:** `in_game/common/wargoals/`
-**Keywords:**
-**Stage:** stub
+| System | Annotation | Stage |
+|---|---|---|
+| Age | [age.md](age.md) | complete |
+| AI Diplomatic Chance | [ai_diplochance.md](ai_diplochance.md) | complete |
+| Alert Descriptions | [alert_descriptions.md](alert_descriptions.md) | complete |
+| Artist Types | [artist_types.md](artist_types.md) | complete |
+| Artist Work | [artist_work.md](artist_work.md) | complete |
+| Attribute Columns | [attribute_columns.md](attribute_columns.md) | complete |
+| Avatars | [avatars.md](avatars.md) | complete |
+| Advances | [advances.md](advances.md) | stub |
+| Auto Modifiers | [auto_modifiers.md](auto_modifiers.md) | stub |
+| Buildings | [buildings.md](buildings.md) | stub |
+| Casus Belli | [casus_belli.md](casus_belli.md) | stub |
+| Character Interactions | [character_interactions.md](character_interactions.md) | stub |
+| Disasters | [disasters.md](disasters.md) | stub |
+| Government Reforms | [government_reforms.md](government_reforms.md) | stub |
+| Government Types | [government_types.md](government_types.md) | stub |
+| Laws | [laws.md](laws.md) | stub |
+| Missions | [missions.md](missions.md) | stub |
+| Modifiers | [modifiers.md](modifiers.md) | stub |
+| Policies | [policies.md](policies.md) | stub |
+| Production Methods | [production_methods.md](production_methods.md) | stub |
+| Religions | [religions.md](religions.md) | stub |
+| Scripted Effects | [scripted_effects.md](scripted_effects.md) | stub |
+| Scripted Triggers | [scripted_triggers.md](scripted_triggers.md) | stub |
+| Static Modifiers | [static_modifiers.md](static_modifiers.md) | stub |
+| Subject Types | [subject_types.md](subject_types.md) | stub |
+| Technologies | [technologies.md](technologies.md) | stub |
+| Traits | [traits.md](traits.md) | stub |
+| Unit Types | [unit_types.md](unit_types.md) | stub |
+| War Goals | [wargoals.md](wargoals.md) | stub |
