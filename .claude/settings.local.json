@@ -1,9 +1,9 @@
 {
   "permissions": {
-    "defaultMode": "bypassPermissions",
     "allow": [
       "WebSearch",
       "Bash(gh pr:*)"
-    ]
+    ],
+    "defaultMode": "bypassPermissions"
   }
 }
