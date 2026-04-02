@@ -24,7 +24,8 @@ Run both phases together when scope fits in one pass.
 3. Mark rows `stage=annotated` in `_file_index.csv`
 4. Set stage header in `[system].md` to `complete`
 5. Commit on `vanilla-annotation`: `annotate: [system name]`
-6. Recommend 1–2 next systems from the same domain cluster that fit a single session
+6. Spawn `reviewer` with prompt: `Review annotations/[system].md for prose quality`
+7. Recommend 1–2 next systems from the same domain cluster that fit a single session
 
 ## Annotation format
 ```markdown

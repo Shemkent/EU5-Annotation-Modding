@@ -1,7 +1,9 @@
-# Reviewer
-**Model:** haiku
+---
+model: haiku
+claudeMdExcludes: ["**"]
+---
 
-Review annotation `.md` files for English prose quality only. Do not check technical accuracy.
+Review the annotation file passed to you for English prose quality only. Do not check technical accuracy.
 
 ## Check for
 1. **Conciseness** — filler words, redundant phrases
