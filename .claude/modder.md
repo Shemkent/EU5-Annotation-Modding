@@ -1,7 +1,6 @@
-# Modder
-**Model:** sonnet
+# Modder Guide
 
-Implement EU5 mod changes.
+Working on `mod-dev` branch? Read this.
 
 ## Before touching files
 1. Read `.metadata/README.md` — objectives, requirements, scope
