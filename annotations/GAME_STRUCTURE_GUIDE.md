@@ -73,18 +73,18 @@ Alert descriptions, attribute columns, artist types & work, insults, death reaso
 | Folder | Likely System | Stage |
 |---|---|---|
 | `in_game/common/subject_types/` | subject_types | annotated |
-| `in_game/common/international_organizations/` | international_organizations | unmapped |
-| `in_game/common/international_organization_payments/` | international_organizations | unmapped |
-| `in_game/common/international_organization_land_ownership_rules/` | international_organizations | unmapped |
-| `in_game/common/international_organization_special_statuses/` | international_organizations | unmapped |
-| `in_game/common/country_interactions/` | country_interactions | unmapped |
-| `in_game/common/generic_actions/` | generic_actions | unmapped |
+| `in_game/common/international_organizations/` | international_organizations | annotated |
+| `in_game/common/international_organization_payments/` | international_organizations | annotated |
+| `in_game/common/international_organization_land_ownership_rules/` | international_organizations | annotated |
+| `in_game/common/international_organization_special_statuses/` | international_organizations | annotated |
+| `in_game/common/country_interactions/` | country_interactions | annotated |
+| `in_game/common/generic_actions/` | generic_actions | annotated |
 | `in_game/common/generic_action_ai_lists/` | ai_generic_actions | unmapped |
-| `in_game/common/diplomatic_costs/` | country_interactions | unmapped |
+| `in_game/common/diplomatic_costs/` | country_interactions | annotated |
 | `in_game/common/scripted_diplomatic_objectives/` | scripted_diplomatic_objectives | unmapped |
 | `in_game/common/scripted_relations/` | scripted_relations | unmapped |
 | `in_game/common/rival_criteria/` | ai_rivals | unmapped |
-| `in_game/common/insults/` | country_interactions | unmapped |
+| `in_game/common/insults/` | country_interactions | annotated |
 | `in_game/common/situations/` | situations | unmapped |
 
 ### Economy & Trade
@@ -250,3 +250,6 @@ Alert descriptions, attribute columns, artist types & work, insults, death reaso
 | Traits | [traits.md](traits.md) | stub |
 | Unit Types | [unit_types.md](unit_types.md) | stub |
 | War Goals | [wargoals.md](wargoals.md) | complete |
+| Country Interactions | [country_interactions.md](country_interactions.md) | complete |
+| Generic Actions | [generic_actions.md](generic_actions.md) | complete |
+| International Organizations | [international_organizations.md](international_organizations.md) | complete |

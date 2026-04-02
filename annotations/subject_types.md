@@ -5,7 +5,7 @@
 > **System type: Gameplay**
 
 ## Overview
-Subject types define every distinct overlord–subject relationship in the game (vassal, march, tributary, dominion, trade company, HRE member, etc.). A subject type block specifies who can offer or receive the relationship, how wars are joined, how fast annexation proceeds, what modifiers each side gains, and how the AI weighs the deal. Subject types are the backbone of EU5's hierarchy system: they determine map colour, autonomy level, diplomatic capacity cost, and institution spread. Modders add subject types to introduce new vassal variants or colonial relationships, or modify existing ones to adjust payment, autonomy, or join-war behaviour.
+Subject types define every distinct overlord–subject relationship in the game (vassal, march, tributary, dominion, trade company, HRE member, etc.). A subject type block specifies who can offer or receive the relationship, how wars are joined, how fast annexation proceeds, what modifiers each side gains, and how the AI weighs the deal. Subject types are the backbone of EU5's hierarchy system. They also determine map colour, autonomy level, diplomatic capacity cost, and institution spread. Modders add subject types to introduce new vassal variants or colonial relationships, or modify existing ones to adjust payment, autonomy, or war-joining behaviour.
 
 ## Vanilla File Locations
 - `in_game/common/subject_types/` — one `.txt` file per subject type (16 files + `readme.txt`)
@@ -137,14 +137,14 @@ Subject types define every distinct overlord–subject relationship in the game 
 - **`subject_pays` is a price script key**, not a raw number. Define the payment amount in a price script (or reference an existing one like `subject_pays_vassal`) to control monthly gold/resource flow.
 - **`diplomatic_capacity_cost_scale` is not a script value** (for performance reasons). It must be a plain float literal.
 - **`diplo_chance_accept_subject`** named factors are engine-defined tags (not arbitrary script). Only the documented factor names work; unknown keys are silently ignored.
-- **`on_enable` / `on_disable` lifecycle effects** allow cultural/language conversions on subject creation (see `dominion.txt` which force-converts the subject's culture and court language). Be careful with irreversible effects in `on_enable`.
+- **`on_enable` / `on_disable` lifecycle effects** allow cultural/language conversions on subject creation (see `dominion.txt` which force-converts the subject's culture and court language). Test `on_enable` effects thoroughly — cultural and language conversions applied here cannot be undone by the game engine.
 - **`visible_through_treaty` is only checked in peace deal contexts**, not the diplomacy screen. Both `visible_through_diplomacy` and `visible_through_treaty` should be set for subject types available via peace treaty.
 - **`can_be_force_broken_in_peace_treaty`** controls whether an enemy can demand the subject relationship be broken. Defaults to yes — set no for types that must be permanent (e.g. `hre.txt`).
 - **Map colour** is controlled by `color` (a named colour key) and `use_overlord_map_color`. Setting the latter to `yes` makes the subject blend into the overlord's map territory.
-- **Cross-system:** subject types reference international organization membership in their `visible_through_diplomacy` triggers (e.g. Japanese shogunate exceptions). Changes to `international_organizations/` data can silently break subject type triggers.
+- **Cross-system:** subject types reference international organization membership in their `visible_through_diplomacy` triggers (e.g. Japanese shogunate exceptions). If `international_organizations/` data changes, re-check these triggers — failures are silent.
 
 ## Example
-`march.txt` — a militarised subject that grants the overlord full recruitment rights in exchange for strong combat modifiers:
+`march.txt` — a militarised subject that receives strong combat modifiers and in return grants the overlord full recruitment rights:
 
 ```pdx
 march = {
@@ -185,4 +185,4 @@ march = {
 }
 ```
 
-The march is level 1 (looser than vassal at level 2), cannot be annexed, but fully joins all wars and grants the overlord total build/recruit access in march territory.
+Cannot be annexed and fully joins all wars. The overlord gains total build/recruit access in march territory; the march gains defensive and discipline bonuses.
