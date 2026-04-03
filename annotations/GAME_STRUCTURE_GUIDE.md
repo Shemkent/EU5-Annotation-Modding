@@ -106,11 +106,11 @@ Alert descriptions, attribute columns, artist types & work, insults, death reaso
 |---|---|---|
 | `in_game/common/estates/` | estates | annotated |
 | `in_game/common/estate_privileges/` | estates | annotated |
-| `in_game/common/character_interactions/` | character_interactions | stub |
-| `in_game/common/child_educations/` | character_interactions | unmapped |
-| `in_game/common/heir_selections/` | character_interactions | unmapped |
+| `in_game/common/character_interactions/` | character_interactions | annotated |
+| `in_game/common/child_educations/` | child_educations | annotated |
+| `in_game/common/heir_selections/` | heir_selections | annotated |
 | `in_game/common/traits/` | traits | annotated |
-| `in_game/common/trait_flavor/` | traits | unmapped |
+| `in_game/common/trait_flavor/` | traits | annotated |
 | `in_game/common/genes/` | genes | unmapped |
 | `in_game/common/persistent_dna/` | genes | unmapped |
 | `in_game/common/ethnicities/` | ethnicities | unmapped |
@@ -143,11 +143,11 @@ Alert descriptions, attribute columns, artist types & work, insults, death reaso
 | `in_game/common/holy_site_types/` | religions | unmapped |
 | `in_game/common/holy_sites/` | religions | unmapped |
 | `in_game/common/avatars/` | avatars | complete |
-| `in_game/common/culture_groups/` | cultures | unmapped |
-| `in_game/common/cultures/` | cultures | unmapped |
-| `in_game/common/societal_values/` | cultures | unmapped |
-| `in_game/common/language_families/` | cultures | unmapped |
-| `in_game/common/languages/` | cultures | unmapped |
+| `in_game/common/culture_groups/` | cultures | annotated |
+| `in_game/common/cultures/` | cultures | annotated |
+| `in_game/common/societal_values/` | societal_values | annotated |
+| `in_game/common/language_families/` | languages | annotated |
+| `in_game/common/languages/` | languages | annotated |
 
 ### Modifiers & Effects (Scripted Infrastructure)
 | Folder | Likely System | Stage |
@@ -232,7 +232,7 @@ Alert descriptions, attribute columns, artist types & work, insults, death reaso
 | Auto Modifiers | [auto_modifiers.md](auto_modifiers.md) | stub |
 | Buildings | [buildings.md](buildings.md) | stub |
 | Casus Belli | [casus_belli.md](casus_belli.md) | complete |
-| Character Interactions | [character_interactions.md](character_interactions.md) | stub |
+| Character Interactions | [character_interactions.md](character_interactions.md) | complete |
 | Disasters | [disasters.md](disasters.md) | stub |
 | Government Reforms | [government_reforms.md](government_reforms.md) | stub |
 | Government Types | [government_types.md](government_types.md) | stub |
@@ -247,7 +247,7 @@ Alert descriptions, attribute columns, artist types & work, insults, death reaso
 | Static Modifiers | [static_modifiers.md](static_modifiers.md) | stub |
 | Subject Types | [subject_types.md](subject_types.md) | complete |
 | Technologies | [technologies.md](technologies.md) | stub |
-| Traits | [traits.md](traits.md) | stub |
+| Traits | [traits.md](traits.md) | complete |
 | Unit Types | [unit_types.md](unit_types.md) | stub |
 | War Goals | [wargoals.md](wargoals.md) | complete |
 | Country Interactions | [country_interactions.md](country_interactions.md) | complete |
@@ -256,3 +256,10 @@ Alert descriptions, attribute columns, artist types & work, insults, death reaso
 | Goods | [goods.md](goods.md) | complete |
 | Pop Types | [pop_types.md](pop_types.md) | complete |
 | Employment Systems | [employment_systems.md](employment_systems.md) | complete |
+| Character Interactions | [character_interactions.md](character_interactions.md) | complete |
+| Traits | [traits.md](traits.md) | complete |
+| Societal Values | [societal_values.md](societal_values.md) | complete |
+| Cultures | [cultures.md](cultures.md) | complete |
+| Heir Selections | [heir_selections.md](heir_selections.md) | complete |
+| Languages | [languages.md](languages.md) | complete |
+| Child Educations | [child_educations.md](child_educations.md) | complete |

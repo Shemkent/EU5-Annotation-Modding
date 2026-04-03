@@ -78,3 +78,21 @@ in_game/common/pop_types/00_default.txt,pop_types,annotated,1.1.10
 in_game/common/employment_systems/00_default.txt,employment_systems,annotated,1.1.10
 in_game/common/employment_systems/readme.txt,employment_systems,annotated,1.1.10
 in_game/common/policies/policies.info,policies,annotated,1.1.10
+in_game/common/character_interactions/[29 files — see character_interactions/ folder],character_interactions,annotated,1.1.10
+in_game/common/character_interactions/readme.txt,character_interactions,annotated,1.1.10
+in_game/common/traits/00_ruler.txt,traits,annotated,1.1.10
+in_game/common/traits/01_general.txt,traits,annotated,1.1.10
+in_game/common/traits/02_admiral.txt,traits,annotated,1.1.10
+in_game/common/traits/03_artist.txt,traits,annotated,1.1.10
+in_game/common/traits/04_explorer.txt,traits,annotated,1.1.10
+in_game/common/traits/05_child.txt,traits,annotated,1.1.10
+in_game/common/traits/06_religious_figure.txt,traits,annotated,1.1.10
+in_game/common/trait_flavor/00_default.txt,traits,annotated,1.1.10
+in_game/common/societal_values/00_default.txt,societal_values,annotated,1.1.10
+in_game/common/cultures/[52 files — see cultures/ folder],cultures,annotated,1.1.10
+in_game/common/culture_groups/00_culture_groups.txt,cultures,annotated,1.1.10
+in_game/common/heir_selections/[5 files — see heir_selections/ folder],heir_selections,annotated,1.1.10
+in_game/common/languages/[53 files — see languages/ folder],languages,annotated,1.1.10
+in_game/common/language_families/00_language_families.txt,languages,annotated,1.1.10
+in_game/common/child_educations/00_default.txt,child_educations,annotated,1.1.10
+in_game/common/child_educations/readme.txt,child_educations,annotated,1.1.10
