@@ -90,16 +90,16 @@ Alert descriptions, attribute columns, artist types & work, insults, death reaso
 ### Economy & Trade
 | Folder | Likely System | Stage |
 |---|---|---|
-| `in_game/common/goods/` | goods | unmapped |
-| `in_game/common/prices/` | goods | unmapped |
-| `in_game/common/goods_demand/` | goods | unmapped |
-| `in_game/common/goods_demand_category/` | goods | unmapped |
+| `in_game/common/goods/` | goods | annotated |
+| `in_game/common/prices/` | goods | annotated |
+| `in_game/common/goods_demand/` | goods | annotated |
+| `in_game/common/goods_demand_category/` | goods | annotated |
 | `in_game/common/production_methods/` | production_methods | annotated |
 | `in_game/common/building_types/` | buildings | annotated |
 | `in_game/common/building_categories/` | buildings | annotated |
-| `in_game/common/pop_types/` | pop_types | unmapped |
-| `in_game/common/employment_systems/` | employment_systems | unmapped |
-| `in_game/common/policies/` | policies | stub |
+| `in_game/common/pop_types/` | pop_types | annotated |
+| `in_game/common/employment_systems/` | employment_systems | annotated |
+| `in_game/common/policies/` | policies | annotated |
 
 ### Estates & Characters
 | Folder | Likely System | Stage |
@@ -239,7 +239,7 @@ Alert descriptions, attribute columns, artist types & work, insults, death reaso
 | Laws | [laws.md](laws.md) | stub |
 | Missions | [missions.md](missions.md) | stub |
 | Modifiers | [modifiers.md](modifiers.md) | stub |
-| Policies | [policies.md](policies.md) | stub |
+| Policies | [policies.md](policies.md) | complete |
 | Production Methods | [production_methods.md](production_methods.md) | stub |
 | Religions | [religions.md](religions.md) | stub |
 | Scripted Effects | [scripted_effects.md](scripted_effects.md) | stub |
@@ -253,3 +253,6 @@ Alert descriptions, attribute columns, artist types & work, insults, death reaso
 | Country Interactions | [country_interactions.md](country_interactions.md) | complete |
 | Generic Actions | [generic_actions.md](generic_actions.md) | complete |
 | International Organizations | [international_organizations.md](international_organizations.md) | complete |
+| Goods | [goods.md](goods.md) | complete |
+| Pop Types | [pop_types.md](pop_types.md) | complete |
+| Employment Systems | [employment_systems.md](employment_systems.md) | complete |

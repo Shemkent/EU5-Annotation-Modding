@@ -64,3 +64,17 @@ in_game/common/diplomatic_costs/[see diplomatic_costs/ folder],country_interacti
 in_game/common/insults/[see insults/ folder],country_interactions,annotated,1.1.10
 in_game/common/generic_actions/[120+ files — see generic_actions/ folder],generic_actions,annotated,1.1.10
 in_game/common/generic_actions/readme.txt,generic_actions,annotated,1.1.10
+in_game/common/goods/00_raw_materials.txt,goods,annotated,1.1.10
+in_game/common/goods/01_plantation_goods.txt,goods,annotated,1.1.10
+in_game/common/goods/02_produced_goods.txt,goods,annotated,1.1.10
+in_game/common/goods/03_food.txt,goods,annotated,1.1.10
+in_game/common/goods/04_special.txt,goods,annotated,1.1.10
+in_game/common/goods/readme.txt,goods,annotated,1.1.10
+in_game/common/prices/[6 files — see prices/ folder],goods,annotated,1.1.10
+in_game/common/prices/readme.txt,goods,annotated,1.1.10
+in_game/common/goods_demand/[7 files — see goods_demand/ folder],goods,annotated,1.1.10
+in_game/common/goods_demand_category/00_default.txt,goods,annotated,1.1.10
+in_game/common/pop_types/00_default.txt,pop_types,annotated,1.1.10
+in_game/common/employment_systems/00_default.txt,employment_systems,annotated,1.1.10
+in_game/common/employment_systems/readme.txt,employment_systems,annotated,1.1.10
+in_game/common/policies/policies.info,policies,annotated,1.1.10
