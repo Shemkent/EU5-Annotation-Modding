@@ -106,3 +106,5 @@ in_game/common/religious_schools/[6 files — see religious_schools/ folder],rel
 in_game/common/religious_figures/[2 files — see religious_figures/ folder],religious_schools,annotated,1.1.10
 in_game/common/religious_factions/[2 files — see religious_factions/ folder],religious_schools,annotated,1.1.10
 in_game/common/gods/[11 files — see gods/ folder],gods,annotated,1.1.10
+annotations/_system_index.json,system_graph,annotated,1.1.10
+annotations/_system_edges.json,system_graph,annotated,1.1.10

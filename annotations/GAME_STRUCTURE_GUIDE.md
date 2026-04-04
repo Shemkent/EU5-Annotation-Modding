@@ -217,54 +217,30 @@ Alert descriptions, attribute columns, artist types & work, insults, death reaso
 
 ---
 
-## Annotation Index (completed systems)
+## Annotation Index
 
-| System | Annotation | Stage |
-|---|---|---|
-| Age | [age.md](age.md) | complete |
-| AI Diplomatic Chance | [ai_diplochance.md](ai_diplochance.md) | complete |
-| Alert Descriptions | [alert_descriptions.md](alert_descriptions.md) | complete |
-| Artist Types | [artist_types.md](artist_types.md) | complete |
-| Artist Work | [artist_work.md](artist_work.md) | complete |
-| Attribute Columns | [attribute_columns.md](attribute_columns.md) | complete |
-| Avatars | [avatars.md](avatars.md) | complete |
-| Advances | [advances.md](advances.md) | stub |
-| Auto Modifiers | [auto_modifiers.md](auto_modifiers.md) | stub |
-| Buildings | [buildings.md](buildings.md) | stub |
-| Casus Belli | [casus_belli.md](casus_belli.md) | complete |
-| Character Interactions | [character_interactions.md](character_interactions.md) | complete |
-| Disasters | [disasters.md](disasters.md) | stub |
-| Government Reforms | [government_reforms.md](government_reforms.md) | stub |
-| Government Types | [government_types.md](government_types.md) | stub |
-| Laws | [laws.md](laws.md) | stub |
-| Missions | [missions.md](missions.md) | stub |
-| Modifiers | [modifiers.md](modifiers.md) | stub |
-| Policies | [policies.md](policies.md) | complete |
-| Production Methods | [production_methods.md](production_methods.md) | stub |
-| Religions | [religions.md](religions.md) | complete |
-| Religious Aspects | [religious_aspects.md](religious_aspects.md) | complete |
-| Holy Sites | [holy_sites.md](holy_sites.md) | complete |
-| Religious Focuses | [religious_focuses.md](religious_focuses.md) | complete |
-| Religious Schools | [religious_schools.md](religious_schools.md) | complete |
-| Gods | [gods.md](gods.md) | complete |
-| Scripted Effects | [scripted_effects.md](scripted_effects.md) | stub |
-| Scripted Triggers | [scripted_triggers.md](scripted_triggers.md) | stub |
-| Static Modifiers | [static_modifiers.md](static_modifiers.md) | stub |
-| Subject Types | [subject_types.md](subject_types.md) | complete |
-| Technologies | [technologies.md](technologies.md) | stub |
-| Traits | [traits.md](traits.md) | complete |
-| Unit Types | [unit_types.md](unit_types.md) | stub |
-| War Goals | [wargoals.md](wargoals.md) | complete |
-| Country Interactions | [country_interactions.md](country_interactions.md) | complete |
-| Generic Actions | [generic_actions.md](generic_actions.md) | complete |
-| International Organizations | [international_organizations.md](international_organizations.md) | complete |
-| Goods | [goods.md](goods.md) | complete |
-| Pop Types | [pop_types.md](pop_types.md) | complete |
-| Employment Systems | [employment_systems.md](employment_systems.md) | complete |
-| Character Interactions | [character_interactions.md](character_interactions.md) | complete |
-| Traits | [traits.md](traits.md) | complete |
-| Societal Values | [societal_values.md](societal_values.md) | complete |
-| Cultures | [cultures.md](cultures.md) | complete |
-| Heir Selections | [heir_selections.md](heir_selections.md) | complete |
-| Languages | [languages.md](languages.md) | complete |
-| Child Educations | [child_educations.md](child_educations.md) | complete |
+System metadata (stage, cluster, version) is maintained in [`_system_index.json`](_system_index.json).
+System relationships are maintained in [`_system_edges.json`](_system_edges.json).
+
+## System Relationships
+
+The annotation project tracks cross-system relationships as a typed edge graph for future interactive visualization.
+
+**Data files:**
+- `_system_index.json` — node registry: system id, label, annotation path, stage, cluster, verified game version, summary
+- `_system_edges.json` — edge list: source → target with typed relationships
+
+**Edge types:**
+| Type | Meaning |
+|---|---|
+| `registers` | System A lists IDs defined in system B |
+| `references` | System A uses IDs from system B |
+| `shared_mechanic` | Systems use the same field pattern (e.g. opinions blocks) |
+| `modifies` | System A pushes values into system B (e.g. monthly_towards_*) |
+| `hierarchy` | System A contains system B |
+
+## TODO
+
+- [ ] **Mermaid diagram** — generate static flowchart from `_system_index.json` + `_system_edges.json` once annotation pass is substantially complete
+- [ ] **Interactive graph viewer** — D3/Cytoscape/vis.js consuming both JSON files; features: click node → annotation, filter by edge type, cluster zoom, version-stale coloring
+- [ ] **Remaining tiers** — Tier 6 (Scripted infrastructure), Tier 7 (AI), Tier 8 (UI/Presentation/Niche) still need annotation
