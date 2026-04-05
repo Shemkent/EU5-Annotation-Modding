@@ -38,5 +38,11 @@
   {"from": "scripted_relations", "to": "scripted_diplomatic_objectives", "type": "references", "note": "scripted_diplomatic_objectives country_relations block references relation keys"},
   {"from": "customizable_localization", "to": "laws", "type": "references", "note": "vanilla functions reference policy/law keys (GetOrderOfChivalry etc.)"},
   {"from": "effect_localization", "to": "trigger_localization", "type": "shared_mechanic", "note": "identical pronoun/tense variant structure and fallback chaining", "bidirectional": true},
-  {"from": "scriptable_hints", "to": "alert_descriptions", "type": "shared_mechanic", "note": "sort_priority aligns with alert severity values"}
+  {"from": "scriptable_hints", "to": "alert_descriptions", "type": "shared_mechanic", "note": "sort_priority aligns with alert severity values"},
+  {"from": "missions", "to": "advances", "type": "shared_mechanic", "note": "similar task DAG with prerequisites and completion triggers"},
+  {"from": "unit_types", "to": "levies", "type": "references", "note": "levy = yes units are granted by the levies system"},
+  {"from": "unit_types", "to": "production_methods", "type": "references", "note": "maintenance_demand and construction_demand reference production method keys"},
+  {"from": "ai_biases", "to": "scripted_relations", "type": "references", "note": "scripted relations apply opinion/trust biases via opinion_* and trust_* field prefixes"},
+  {"from": "ai_generic_actions", "to": "generic_actions", "type": "references", "note": "actions block lists generic_action keys from the generic_actions system"},
+  {"from": "ai_war", "to": "wargoals", "type": "references", "note": "join_war_disabled_trigger can inspect war scope which relates to wargoals"}
 ]

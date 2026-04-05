@@ -157,3 +157,20 @@ in_game/common/trigger_localization/common_triggers.txt,trigger_localization,ann
 in_game/common/trigger_localization/[39 further files],trigger_localization,annotated,1.1.10
 in_game/common/customizable_localization/00_customizable_localization.txt,customizable_localization,annotated,1.1.10
 in_game/common/customizable_localization/[24 further files],customizable_localization,annotated,1.1.10
+in_game/common/missions/____Info.txt,missions,annotated,1.1.10
+in_game/common/missions/generic_conquer_province_mission_pack.txt,missions,annotated,1.1.10
+in_game/common/missions/[10 further files],missions,annotated,1.1.10
+in_game/common/mission_task_defs/missin_task_defs.info,missions,annotated,1.1.10
+in_game/common/unit_types/00_age_templates_land.txt,unit_types,annotated,1.1.10
+in_game/common/unit_types/00_age_templates_navy.txt,unit_types,annotated,1.1.10
+in_game/common/unit_types/[27 further files],unit_types,annotated,1.1.10
+in_game/common/unit_categories/[8 files],unit_types,annotated,1.1.10
+in_game/common/unit_abilities/[16 files],unit_types,annotated,1.1.10
+in_game/common/biases/00_opinion_hardcoded.txt,ai_biases,annotated,1.1.10
+in_game/common/biases/[7 further files],ai_biases,annotated,1.1.10
+in_game/common/rival_criteria/readme.txt,ai_rivals,annotated,1.1.10
+in_game/common/rival_criteria/europe.txt,ai_rivals,annotated,1.1.10
+in_game/common/generic_action_ai_lists/catholic_list.txt,ai_generic_actions,annotated,1.1.10
+in_game/common/generic_action_ai_lists/[69 further files],ai_generic_actions,annotated,1.1.10
+in_game/common/join_war_rules/readme.txt,ai_war,annotated,1.1.10
+in_game/common/join_war_rules/teu_crusade.txt,ai_war,annotated,1.1.10

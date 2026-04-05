@@ -418,6 +418,60 @@
       "summary": "Scripted succession law rules defining candidate filtering, scoring, and validation for determining the next ruler."
     },
     {
+      "id": "missions",
+      "label": "Missions",
+      "annotation": "missions.md",
+      "stage": "complete",
+      "cluster": "tech_progression",
+      "verified_version": "1.1.10",
+      "summary": "Country objective chains with weighted selection from a potential pool; each mission contains a DAG of tasks with prerequisites, timed completion, and reward effects."
+    },
+    {
+      "id": "unit_types",
+      "label": "Unit Types",
+      "annotation": "unit_types.md",
+      "stage": "complete",
+      "cluster": "military_war",
+      "verified_version": "1.1.10",
+      "summary": "Defines military and naval units with category-inherited base stats, terrain modifiers, and copy_from inheritance; unit abilities define scripted field actions."
+    },
+    {
+      "id": "ai_biases",
+      "label": "AI Biases",
+      "annotation": "ai_biases.md",
+      "stage": "complete",
+      "cluster": "ai",
+      "verified_version": "1.1.10",
+      "summary": "Named opinion, trust, and antagonism modifier entries applied between countries by engine code or scripted effects, with optional caps, expiry, and yearly decay."
+    },
+    {
+      "id": "ai_rivals",
+      "label": "AI Rivals",
+      "annotation": "ai_rivals.md",
+      "stage": "complete",
+      "cluster": "ai",
+      "verified_version": "1.1.10",
+      "summary": "Tag-specific triggers and block lists that restrict which countries the AI will choose as rivals; players are unaffected."
+    },
+    {
+      "id": "ai_generic_actions",
+      "label": "AI Generic Action Lists",
+      "annotation": "ai_generic_actions.md",
+      "stage": "complete",
+      "cluster": "ai",
+      "verified_version": "1.1.10",
+      "summary": "Named conditional sets of generic actions the AI evaluates periodically; potential trigger gates the list, actions block lists candidates."
+    },
+    {
+      "id": "ai_war",
+      "label": "AI War (Join War Rules)",
+      "annotation": "ai_war.md",
+      "stage": "complete",
+      "cluster": "ai",
+      "verified_version": "1.1.10",
+      "summary": "Named triggers that block AI countries from joining specific wars as allies; rule key doubles as localisation for the decline reason."
+    },
+    {
       "id": "scripted_relations",
       "label": "Scripted Relations",
       "annotation": "scripted_relations.md",
