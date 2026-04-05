@@ -41,7 +41,7 @@ The `rule_key` is used as a localisation key; localise it as `rule_key: "Reason 
 ## Modding Notes
 - This is an **AI-only** system — players can join any war they are called to through normal UI.
 - `scope:war` may not exist when the trigger is evaluated (pre-war call); always guard with `exists = scope:war` before accessing war variables.
-- Rule keys should be localised; without a localisation entry the raw key appears in the tooltip when the AI declines.
+- Rule keys should be localised; without a localisation entry the raw key appears in the tooltip when the AI declines. Place the entry in a standard `localization/` file: `rule_key: "Reason text"` — the key is simply the block name.
 - Multiple rule files load additively; all rules are checked — the AI is blocked if **any** rule's trigger passes.
 - The readme lists `COUNTRY`, `OUR_LEADER_COUNTRY`, `ENEMY_LEADER_COUNTRY`, and `WAR` alongside the trigger scopes. These are localisation scopes for the tooltip text, not trigger scopes inside `join_war_disabled_trigger`; use `root`, `scope:war`, `scope:first_leader`, and `scope:second_leader` in trigger blocks.
 

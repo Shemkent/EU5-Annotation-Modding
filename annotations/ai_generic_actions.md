@@ -16,7 +16,8 @@ Generic action AI lists are named conditional sets of generic actions the AI per
 | `in_game/common/generic_action_ai_lists/colonial_charters_list.txt` | Colonial charter management |
 | `in_game/common/generic_action_ai_lists/black_death_list.txt` | Black death response actions |
 | `in_game/common/generic_action_ai_lists/columbian_exchange_list.txt` | Post-Columbian exchange actions |
-| … *(70 list files + readme.txt)* | One file per contextual action set |
+| `in_game/common/generic_action_ai_lists/readme.txt` | Syntax reference and design rationale |
+| … *(69 list files total)* | One file per contextual action set |
 
 ## Block Structure
 
@@ -46,7 +47,7 @@ list_key = {
 - Multiple lists can reference the same action. The vanilla readme does not document whether the AI de-duplicates weights across lists or evaluates each reference independently — test before relying on cross-list weight stacking.
 - `global_list` **must not be removed** — any generic action without an explicit list entry is automatically assigned to it. New actions should be given a specific list to avoid bloating the global evaluation pass (the `global_list` header notes it is slow).
 - `potential` should be as cheap as possible; it is evaluated each AI decision cycle (approximately monthly). Use tag, religion, or flag checks rather than complex iterators.
-- 70 list files is a large set — adding a new list file is the correct approach for new contextual groups; do not add actions to unrelated vanilla lists.
+- 69 list files is a large set — adding a new list file is the correct approach for new contextual groups; do not add actions to unrelated vanilla lists.
 
 ## Example
 

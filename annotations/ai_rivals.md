@@ -49,7 +49,7 @@ Both `enabled` and `ai_rule` can be combined in one block. If a potential rival 
 - If `enabled` is absent, the keyed country's AI has no restriction on target selection (any country meeting the engine's general rival criteria is eligible). `enabled` and `ai_rule` can coexist in one block; `ai_rule` is evaluated after `enabled` — a country blocked by `ai_rule` is never rivalled even if it passes `enabled`.
 - `ai_rule` supports standard PDXScript trigger logic (AND/OR/NOT) — it is not a flat tag list.
 - `!=` in `enabled` is shorthand for `NOT = { ... = ... }` and is valid PDXScript trigger syntax.
-- `ai_rule` is used for diplomatic-narrative reasons (e.g. preventing Castile from rivalling Portugal so the Iberian union route stays open through diplomacy).
+- `ai_rule` is used for diplomatic-narrative reasons (e.g. preventing Castile from rivalling Portugal so the Iberian union route stays open through diplomacy). `ai_rule` is one-directional — if you want bilateral protection, both countries need entries (`CAS` blocking `POR` and `POR` blocking `CAS`).
 - No entry is needed for most tags — the AI will rival any country that meets general criteria. Only add entries when you need to override default AI behaviour for a specific tag.
 - At 1.1.10 `europe.txt` is the only data file. To add entries for non-European tags, create a new file (e.g. `asia.txt`) in the same folder; the engine loads all `.txt` files in `rival_criteria/`.
 
