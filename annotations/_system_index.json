@@ -274,15 +274,6 @@
       "summary": "Named, reusable trigger blocks callable anywhere in script with optional parameterized arguments, mirroring the scripted_effects pattern."
     },
     {
-      "id": "static_modifiers",
-      "label": "Static Modifiers",
-      "annotation": "static_modifiers.md",
-      "stage": "stub",
-      "cluster": "scripted_infrastructure",
-      "verified_version": "1.1.10",
-      "summary": "Stub — not yet annotated."
-    },
-    {
       "id": "subject_types",
       "label": "Subject Types",
       "annotation": "subject_types.md",
