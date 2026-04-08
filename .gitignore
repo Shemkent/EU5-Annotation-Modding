@@ -7,6 +7,10 @@
 !/.claude/
 !.gitignore
 !README.md
+!/in_game/common/
+!/in_game/events/
+!/in_game/setup/
+!/main_menu/common/static_modifiers/
 
 # Within mod directories, ignore backup/temp files
 mod/**/*.mod.backup
