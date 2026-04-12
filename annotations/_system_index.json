@@ -9,7 +9,8 @@
     "tech_progression": { "label": "Technology & Progression", "color": "#4ad9d9" },
     "scripted_infrastructure": { "label": "Scripted Infrastructure", "color": "#888888" },
     "ui_presentation": { "label": "UI / Presentation", "color": "#bbbbbb" },
-    "ai": { "label": "AI", "color": "#d9d94a" }
+    "ai": { "label": "AI", "color": "#d9d94a" },
+    "geography_map": { "label": "Geography & Map", "color": "#6ab04c" }
   },
   "systems": [
     {
