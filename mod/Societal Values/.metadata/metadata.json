@@ -1,0 +1,11 @@
+{
+	"name":	"Societal Values",
+	"id":	"societal_values",
+	"version":	"0.1",
+	"supported_game_version":	"1.0.10",
+	"short_description":	"Overhauls the societal value system. Cultures gain value identities along axes like cosmology, surplus orientation, kinship, and time perception. Culture values converge bidirectionally with their dominant nation, weighted by political power. Non-accepted cultures are excluded from convergence, creating organic value drift. Value differentials between cultures and their host nation produce friction in governance and extraction.",
+	"tags":	["Gameplay", "Historical"],
+	"relationships":	[],
+	"game_custom_data":	{
+	}
+}

@@ -11,6 +11,8 @@ Modding and annotation project for EU5 gameplay changes.
 ## Mods
 
 - **Better Piracy Workaround** — Reduces pirate durability to manageable levels
+- **Ecological Depletion** — Provincial resource depletion; land degrades under overexploitation
+- **Societal Values** — Culture value identities with bidirectional nation-culture convergence
 
 ## Workflow
 

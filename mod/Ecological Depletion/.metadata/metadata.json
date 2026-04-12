@@ -1,0 +1,11 @@
+{
+	"name":	"Ecological Depletion",
+	"id":	"ecological_depletion",
+	"version":	"0.1",
+	"supported_game_version":	"1.0.10",
+	"short_description":	"Introduces provincial resource depletion. Geography sets a carrying capacity, technology controls development intensity, and overproduction erodes efficiency over time. Sustained overexploitation triggers irreversible production type shifts (e.g. Dense Forest to Scrubland). Makes land a finite, degradable resource rather than a passive backdrop.",
+	"tags":	["Gameplay", "Economy"],
+	"relationships":	[],
+	"game_custom_data":	{
+	}
+}
