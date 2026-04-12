@@ -1,6 +1,7 @@
 # EU5 Modding Project
 **Game version:** 1.1.10
 - Be concise
+- If a tool can answer it, use it — don't ask the user.
 
 ## Structure
 - `annotations/` — vanilla system references
