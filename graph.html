@@ -261,8 +261,8 @@
        ============================ */
     async function loadData() {
       const [indexResp, edgesResp] = await Promise.all([
-        fetch('_system_index.json'),
-        fetch('_system_edges.json')
+        fetch('annotations/_system_index.json'),
+        fetch('annotations/_system_edges.json')
       ]);
       if (!indexResp.ok || !edgesResp.ok) throw new Error('Fetch failed');
       return {
@@ -551,7 +551,7 @@
       currentAbort = new AbortController();
 
       try {
-        var resp = await fetch(sysData.annotation, { signal: currentAbort.signal });
+        var resp = await fetch('annotations/' + sysData.annotation, { signal: currentAbort.signal });
         if (!resp.ok) throw new Error(resp.status + ' ' + resp.statusText);
         var md = await resp.text();
         content.innerHTML = marked.parse(md);
